@@ -1,5 +1,6 @@
 import React from "react";
 import secondFeatureImg from "../../assets/secondFeatureImg.png";
+import mobilePage from "../../assets/mobileImage.png";
 import FeaturesGrid from "./FeatureGrid";
 
 const SecondFeature = () => {
@@ -19,18 +20,15 @@ const SecondFeature = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-4 text-center w-[580px] text-gray-600 text-base max-w-2xl mobile:w-[280px] lg:w-[580px]">
+        <p className="mt-4 text-center w-[580px] text-gray-600 text-base max-w-2xl mobile:w-[78%] lg:w-[60%]">
           Powerful, self-serve product and growth analytics to help you convert,
           engage, and retain more users. Trusted by over 4,000 startups.
         </p>
       </div>
-      <img
-        src={secondFeatureImg}
-        alt="hero section"
-        className="mt-6 h-auto px-36"
-      />
+      <img src={secondFeatureImg} alt="hero section" className="mt-6 h-auto px-36 mobile:hidden lg:block" />
+      <img src={mobilePage} alt="hero section" className="mt-6 h-auto px-5 mobile:block lg:hidden" />
       <FeaturesGrid />
-      <hr className="my-12 w-[88%] m-auto"></hr>
+      <hr className="my-20 max-w-7xl m-auto px-4 mobile:my-10 sm:px-6 lg:px-8"></hr>
     </>
   );
 };

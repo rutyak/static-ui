@@ -57,25 +57,25 @@ const FeaturesSection = () => {
         <h2 className="text-3xl font-sans font-bold text-gray-900 text-center mt-2">
           Analytics that feels like it’s from the future
         </h2>
-        <p className="text-center w-[580px] text-gray-500 mt-4 mobile:w-[280px] lg:w-[580px]">
+        <p className="text-center text-gray-500 mt-4 mobile:w-[280px] sm:w-[300px] md:w-[330px] lg:w-[450px] xl:w-[580px]">
           Powerful, self-serve product and growth analytics to help you convert,
           engage, and retain more users. Trusted by over 4,000 startups.
         </p>
       </div>
 
-      <div className="py-16">
+      <div className="py-16 mobile:py-8 sm:py-7 lg:py-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center bg-white p-6 rounded-lg hover:shadow-md transition"
+                className="flex flex-col items-center justify-center bg-white p-6 rounded-lg transition"
               >
                 <img src={feature.icon} alt="icons" className="mb-4 w-10 h-10"/>
                 <h3 className="text-lg font-semibold text-gray-900">
                   {feature.title}
                 </h3>
-                <p className="mt-2 text-sm text-center text-gray-500 mobile:w-[280px] lg:w-[580px]">
+                <p className="mt-2 text-sm text-center text-gray-500 mobile:w-[280px]">
                   {feature.description}
                 </p>
               </div>
@@ -100,7 +100,6 @@ const FeaturesSection = () => {
 
           {/* User Info */}
           <div className="flex flex-col justify-center items-center">
-            {/* Avatar */}
             <img
               src={candiceIcon}
               alt="Candice Wu"

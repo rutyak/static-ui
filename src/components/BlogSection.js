@@ -5,6 +5,7 @@ import image3 from "../assets/blogImage3.png";
 import user1 from "../assets/candisPreofileIcon.png";
 import user2 from "../assets/user2.png";
 import user3 from "../assets/user3.png";
+import StartYourTrial from "./StarYourTrial";
 
 // Reusable BlogCard Component
 const BlogCard = ({
@@ -17,11 +18,11 @@ const BlogCard = ({
   date,
 }) => {
   return (
-    <div className="bg-gray-50 rounded-lg shadow p-4">
+    <div>
       <img
         src={image}
         alt={title}
-        className="w-full h-48 rounded-lg object-cover"
+        className="w-full h-48 object-cover"
       />
       <p className="text-purple-600 font-semibold text-sm mt-4">{category}</p>
       <h3 className="text-lg font-bold text-gray-800 mt-2">{title}</h3>
@@ -78,12 +79,12 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-white max-w-7xl mx-auto">
       {/* Blog Header */}
-      <div className="flex justify-between items-center mb-12 max-w-7xl mx-auto">
+      <div className="flex justify-between items-center mb-12 max-w-7xl mx-auto mobile:px-5">
         <div>
           <h2 className="text-lg font-semibold text-purple-600">Our blog</h2>
-          <h1 className="text-3xl font-bold text-gray-900 mt-2">
+          <h1 className="text-3xl font-bold text-gray-900 mt-2 mobile:mt-0 mobile:text-2xl lg:mt-2 lg:text-3xl">
             Latest blog posts
           </h1>
           <p className="text-gray-600 mt-2">
@@ -96,7 +97,7 @@ const BlogSection = () => {
       </div>
 
       {/* Blog Cards */}
-      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl m-auto">
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl m-auto mobile:px-5">
         {blogs.map((blog, index) => (
           <BlogCard
             key={index}
@@ -111,25 +112,7 @@ const BlogSection = () => {
         ))}
       </div>
 
-      {/* Footer CTA */}
-      <div className="bg-gray-100 mt-12 py-14 px-6 text-center rounded-lg shadow flex flex-col gap-4">
-        <div>
-          <h2 className="text-3xl font-semibold font-sans text-gray-800">
-            Start your free trial
-          </h2>
-          <p className="text-gray-600 mt-2">
-            Join over 4,000+ startups already growing with Untitled.
-          </p>
-        </div>
-        <div className="mt-4 flex justify-center space-x-4">
-          <button className="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400">
-            Learn more
-          </button>
-          <button className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
-            Get started
-          </button>
-        </div>
-      </div>
+      <StartYourTrial/>
     </div>
   );
 };

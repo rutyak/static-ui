@@ -1,211 +1,104 @@
 import React from "react";
-import addicon from "../assets/appicon.png";
+import appicon from "../assets/appicon.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-12 border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Footer Links */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 mb-12">
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase mb-4">
-              Product
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Overview
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Features
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Solutions <span className="text-green-600 text-xs bg-green-100 rounded-full px-2 ml-2">New</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Tutorials
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Releases
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase mb-4">
-              Company
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  About us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Press
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  News
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Media kit
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase mb-4">
-              Resources
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Newsletter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Events
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Help center
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Tutorials
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Support
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase mb-4">
-              Use cases
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Startups
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Enterprise
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Government
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  SaaS centre
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Marketplaces
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Ecommerce
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase mb-4">
-              Social
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  AngelList
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Dribbble
-                </a>
-              </li>
-            </ul>
-          </div>
+    <div className="max-w-7xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 p-8 bg-white text-gray-800">
+        {/* Product Section */}
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Product</h3>
+          <ul className="space-y-2">
+            <li>Overview</li>
+            <li>Features</li>
+            <li>
+              Solutions{" "}
+              <span className="ml-2 px-2 py-1 text-xs font-medium text-green-800 bg-green-100 rounded">
+                New
+              </span>
+            </li>
+            <li>Tutorials</li>
+            <li>Pricing</li>
+            <li>Releases</li>
+          </ul>
         </div>
 
-        {/* Footer Bottom */}
-        <div className="flex justify-between items-center border-t border-gray-200 pt-8">
-          <div className="flex items-center space-x-2">
-            <img src={addicon} alt="appicon" className="w-10 h-10"/>
-            <p className="text-gray-900 font-bold">Untitled UI</p>
-          </div>
-          <p className="text-gray-500 text-sm mt-2">
-            © 2077 Untitled UI. All rights reserved.
-          </p>
+        {/* Company Section */}
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Company</h3>
+          <ul className="space-y-2">
+            <li>About us</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>News</li>
+            <li>Media kit</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        {/* Resources Section */}
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Resources</h3>
+          <ul className="space-y-2">
+            <li>Blog</li>
+            <li>Newsletter</li>
+            <li>Events</li>
+            <li>Help centre</li>
+            <li>Tutorials</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        {/* Use Cases Section */}
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Use cases</h3>
+          <ul className="space-y-2">
+            <li>Startups</li>
+            <li>Enterprise</li>
+            <li>Government</li>
+            <li>SaaS centre</li>
+            <li>Marketplaces</li>
+            <li>Ecommerce</li>
+          </ul>
+        </div>
+
+        {/* Social Section */}
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Social</h3>
+          <ul className="space-y-2">
+            <li>Twitter</li>
+            <li>LinkedIn</li>
+            <li>Facebook</li>
+            <li>GitHub</li>
+            <li>AngelList</li>
+            <li>Dribbble</li>
+          </ul>
+        </div>
+
+        {/* Legal Section */}
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Legal</h3>
+          <ul className="space-y-2">
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Cookies</li>
+            <li>Licenses</li>
+            <li>Settings</li>
+            <li>Contact</li>
+          </ul>
         </div>
       </div>
-    </footer>
+      {/* Footer Bottom */}
+      <div className="flex w-full justify-between items-center border-t border-gray-200 pt-8 mobile:flex-col mobile:items-start mobile:px-5 lg:flex-row">
+        <div className="flex items-center space-x-2">
+          <img src={appicon} alt="appicon" className="w-10 h-10" />
+          <p className="text-gray-900 font-bold">Grow</p>
+        </div>
+        <p className="text-gray-500 text-sm mt-2 mobile:text-sm lg:text-lg">
+          © 2077 Untitled UI. All rights reserved.
+        </p>
+      </div>
+    </div>
   );
 };
 

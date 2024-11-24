@@ -26,8 +26,8 @@ const FeaturesGrid = () => {
   ];
 
   return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="container max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {features.map((feature, index) => (
           <div
             key={index}

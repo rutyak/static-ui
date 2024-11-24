@@ -48,13 +48,13 @@ const FAQs = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-b rounded-lg p-4 transition duration-200"
+              className="border-b rounded-lg p-4 transition duration-200 mobile:p-1 mobile:py-3 lg:p-4"
             >
               <button
                 className="flex justify-between items-center w-full"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="font-medium">{faq.question}</span>
+                <span className="font-medium mobile:text-md mobile:w-[90%] mobile:text-left lg:font-medium lg:text-medium">{faq.question}</span>
                 <span className="text-gray-500">
                   {activeIndex === index ? (
                     <img
@@ -94,7 +94,7 @@ const FAQs = () => {
           Get in touch
         </button>
       </div>
-      <hr className="my-20 w-[88%] m-auto"></hr>
+      <hr className="my-20 max-w-7xl m-auto px-4 mobile:my-10 sm:px-6 lg:px-8"></hr>
     </>
   );
 };

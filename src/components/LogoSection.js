@@ -8,23 +8,22 @@ import Nietzsche from "../assets/Neitzsche.png";
 
 const LogoSection = () => {
 
-  const logoStyle = "text-gray-900 text-2xl font-bold";
+  const logoStyle = "text-gray-900 text-2xl font-bold mobile:text-xl lg:text-2xl";
+  const iconStyle = "h-10 mobile:h-7 lg:h-10";
 
   return (
-    <section className="max-w-6xl mx-auto bg-white py-4">
+    <section className="max-w-7xl mt-10 mx-auto bg-white py-4">
       <div className="text-center">
-        {/* Headline */}
         <p className="text-gray-500 text-sm font-medium mb-6">
           Join 4,000+ companies already growing
         </p>
 
-        {/* Logo Grid */}
-        <div className="flex justify-center items-center flex-wrap gap-10">
+        <div className="flex justify-center items-center flex-wrap gap-10 xl:gap-14">
           <div className="flex items-center space-x-2">
             <img
               src={Boltshift}
               alt="Boltshift"
-              className="h-10"
+              className={iconStyle}
             />
             <span className={logoStyle}>Boltshift</span>
           </div>
@@ -32,7 +31,7 @@ const LogoSection = () => {
             <img
               src={Lightbox}
               alt="Lightbox"
-              className="h-10"
+              className={iconStyle}
             />
             <span className={logoStyle}>Lightbox</span>
           </div>
@@ -40,7 +39,7 @@ const LogoSection = () => {
             <img
               src={FeatherDev} 
               alt="FeatherDev"
-              className="h-10"
+              className={iconStyle}
             />
             <span className={logoStyle}>FeatherDev</span>
           </div>
@@ -48,7 +47,7 @@ const LogoSection = () => {
             <img
               src={Spherule} 
               alt="Spherule"
-              className="h-10"
+              className={iconStyle}
             />
             <span className={logoStyle}>Spherule</span>
           </div>
@@ -56,7 +55,7 @@ const LogoSection = () => {
             <img
               src={GlobalBank} 
               alt="GlobalBank"
-              className="h-10"
+              className={iconStyle}
             />
             <span className={logoStyle}>GlobalBank</span>
           </div>
@@ -64,13 +63,13 @@ const LogoSection = () => {
             <img
               src={Nietzsche}
               alt="Nietzsche"
-              className="h-10"
+              className={iconStyle}
             />
             <span className={logoStyle}>Nietzsche</span>
           </div>
         </div>
       </div>
-      <hr className="my-20 max-w-7xl m-auto px-4 sm:px-6 lg:px-8"></hr>
+      <hr className="my-20 max-w-7xl m-auto px-4 mobile:my-10 sm:px-6 lg:px-8"></hr>
     </section>
   );
 };
