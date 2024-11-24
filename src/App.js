@@ -10,7 +10,7 @@ import LogoSection from './components/LogoSection';
 
 function App() {
   return (
-    <div>
+    <div className='w-full mx-auto'>
       <Navbar/>
       <HeroSection/>
       <LogoSection/>

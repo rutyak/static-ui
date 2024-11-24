@@ -1,4 +1,5 @@
 import React from "react";
+import addicon from "../assets/appicon.png";
 
 const Footer = () => {
   return (
@@ -194,9 +195,9 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="flex flex-col items-center border-t border-gray-200 pt-8">
+        <div className="flex justify-between items-center border-t border-gray-200 pt-8">
           <div className="flex items-center space-x-2">
-            <span className="w-4 h-4 rounded-full bg-purple-600"></span>
+            <img src={addicon} alt="appicon" className="w-10 h-10"/>
             <p className="text-gray-900 font-bold">Untitled UI</p>
           </div>
           <p className="text-gray-500 text-sm mt-2">

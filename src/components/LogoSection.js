@@ -8,18 +8,18 @@ import Nietzsche from "../assets/Neitzsche.png";
 
 const LogoSection = () => {
 
-  const logoStyle = "text-gray-900 text-xl font-bold";
+  const logoStyle = "text-gray-900 text-2xl font-bold";
 
   return (
-    <section className="bg-white py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="max-w-6xl mx-auto bg-white py-4">
+      <div className="text-center">
         {/* Headline */}
         <p className="text-gray-500 text-sm font-medium mb-6">
           Join 4,000+ companies already growing
         </p>
 
         {/* Logo Grid */}
-        <div className="flex justify-center items-center flex-wrap gap-8">
+        <div className="flex justify-center items-center flex-wrap gap-10">
           <div className="flex items-center space-x-2">
             <img
               src={Boltshift}
@@ -70,6 +70,7 @@ const LogoSection = () => {
           </div>
         </div>
       </div>
+      <hr className="my-20 max-w-7xl m-auto px-4 sm:px-6 lg:px-8"></hr>
     </section>
   );
 };
