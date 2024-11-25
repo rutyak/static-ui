@@ -1,50 +1,14 @@
 import React from "react";
-import image1 from "../assets/blogImage1.png";
-import image2 from "../assets/blogImage2.png";
-import image3 from "../assets/blogImage3.png";
-import user1 from "../assets/candisPreofileIcon.png";
-import user2 from "../assets/user2.png";
-import user3 from "../assets/user3.png";
+import image1 from "../../assets/blogImage1.png";
+import image2 from "../../assets/blogImage2.png";
+import image3 from "../../assets/blogImage3.png";
+import user1 from "../../assets/candisPreofileIcon.png";
+import user2 from "../../assets/user2.png";
+import user3 from "../../assets/user3.png";
 import StartYourTrial from "./StarYourTrial";
+import BlogCard from "./Blogcard";
 
-// Reusable BlogCard Component
-const BlogCard = ({
-  image,
-  category,
-  title,
-  description,
-  authorImg,
-  authorName,
-  date,
-}) => {
-  return (
-    <div>
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-48 object-cover"
-      />
-      <p className="text-purple-600 font-semibold text-sm mt-4">{category}</p>
-      <h3 className="text-lg font-bold text-gray-800 mt-2">{title}</h3>
-      <p className="text-gray-600 mt-2 text-sm">{description}</p>
-      <div className="flex items-center mt-4">
-        <img
-          src={authorImg}
-          alt={authorName}
-          className="w-8 h-8 rounded-full"
-        />
-        <div className="ml-2 text-sm text-gray-500">
-          <p>{authorName}</p>
-          <p>{date}</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// Main BlogSection Component
 const BlogSection = () => {
-  // Data for blog posts
   const blogs = [
     {
       image: image1,
@@ -79,7 +43,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="bg-white max-w-7xl mx-auto">
+    <div className="bg-white">
       {/* Blog Header */}
       <div className="flex justify-between items-center mb-12 max-w-7xl mx-auto mobile:px-5">
         <div>

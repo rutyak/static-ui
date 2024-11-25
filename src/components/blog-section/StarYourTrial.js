@@ -10,10 +10,10 @@ const StartYourTrial = () => {
         </p>
       </div>
       <div className="mt-4 flex justify-center gap-4 mobile:flex-col-reverse mobile:w-full mobile:items-center lg:flex-row">
-        <button className="px-4 py-2 border bg-white shadow-sm text-gray-700 rounded-lg hover:bg-gray-400 mobile:w-[90%] lg:w-[200px]">
+        <button className="px-4 py-2 border bg-white shadow-sm text-gray-700 rounded-lg hover:bg-gray-400 mobile:w-[90%] lg:w-[200px] xl:w-[116px] xl:text-sm">
           Learn more
         </button>
-        <button className="px-4 py-2 bg-purple-600 shadow-sm text-white rounded-lg hover:bg-purple-700 mobile:w-[90%] lg:w-[200px]">
+        <button className="px-4 py-2 bg-purple-600 shadow-sm text-white rounded-lg hover:bg-purple-700 mobile:w-[90%] lg:w-[200px] xl:w-[116px] xl:text-sm">
           Get started
         </button>
       </div>

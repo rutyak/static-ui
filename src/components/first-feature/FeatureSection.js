@@ -1,47 +1,41 @@
 import React from "react";
-import indexIcon from "../../assets/inboxIcon.png";
-import delivaryIcon from "../../assets/deliverIcon.png";
-import manageIcon from "../../assets/manageIcon.png";
-import connectIcon from "../../assets/connectIcon.png";
-import customerIcon from "../../assets/customeConnectIcon.png";
-import peopleIcon from "../../assets/peopleIcon.png";
-import sisfusIcon from "../../assets/sisIcon.png";
 import candiceIcon from "../../assets/candisPreofileIcon.png"
+import { ConnectCustomerIcon, ConnectIcon, DelivaryIcon, InboxIcon, ManageIcon, PeopleIcon, Sisyphus } from "../../assets/Icons";
 
 const FeaturesSection = () => {
   const features = [
     {
-      icon: indexIcon, 
+      icon: <InboxIcon/>, 
       title: "Share team inboxes",
       description:
         "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
     },
     {
-      icon: delivaryIcon, 
+      icon: <DelivaryIcon/>, 
       title: "Deliver instant answers",
       description:
         "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
     },
     {
-      icon: manageIcon, 
+      icon: <ManageIcon/>, 
       title: "Manage your team with reports",
       description:
         "Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple of clicks.",
     },
     {
-      icon: connectIcon,
+      icon: <ConnectCustomerIcon/>,
       title: "Connect with customers",
       description:
         "Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.",
     },
     {
-      icon: customerIcon, 
+      icon: <ConnectIcon/>, 
       title: "Connect the tools you already use",
       description:
         "Explore 100+ integrations that make your day-to-day workflow more efficient and familiar. Plus, our extensive developer tools.",
     },
     {
-      icon: peopleIcon, 
+      icon: <PeopleIcon/>, 
       title: "Our people make the difference",
       description:
         "We’re an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.",
@@ -51,7 +45,7 @@ const FeaturesSection = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center bg-white max-w-7xl m-auto">
-        <p className="text-sm font-medium text-purple-600">
+        <p className="text-sm py-1 px-3 font-medium bg-purple-100 rounded-full text-purple-600">
           Features
         </p>
         <h2 className="text-3xl font-sans font-bold text-gray-900 text-center mt-2">
@@ -71,7 +65,7 @@ const FeaturesSection = () => {
                 key={index}
                 className="flex flex-col items-center justify-center bg-white p-6 rounded-lg transition"
               >
-                <img src={feature.icon} alt="icons" className="mb-4 w-10 h-10"/>
+                {feature.icon}
                 <h3 className="text-lg font-semibold text-gray-900">
                   {feature.title}
                 </h3>
@@ -86,13 +80,12 @@ const FeaturesSection = () => {
         <div className="py-16 flex flex-col items-center gap-7 bg-gray-50 px-4 mt-16">
           {/* Logo */}
           <div className="flex items-center">
-           <img src={sisfusIcon} alt="sisfus" className="w-8 h-8"/>
+            <Sisyphus/>
             <span className="ml-2 text-xl font-semibold text-gray-900">
               Sisyphus
             </span>
           </div>
 
-          {/* Testimonial Text */}
           <p className="text-center text-3xl font-sans font-medium text-gray-700 max-w-3xl">
             We’ve been using Untitled to kick start every new project and can’t
             imagine working without it.

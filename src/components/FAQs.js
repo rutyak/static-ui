@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import maximiseIcon from "../assets/maximiseIcon.png";
-import minimiseIcon from "../assets/minimiseIcon.png";
 import multipleIcons from "../assets/multipleIcon.png";
+import { Maximize, Minimize } from "../assets/Icons";
 
 const FAQs = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -57,17 +56,9 @@ const FAQs = () => {
                 <span className="font-medium mobile:text-md mobile:w-[90%] mobile:text-left lg:font-medium lg:text-medium">{faq.question}</span>
                 <span className="text-gray-500">
                   {activeIndex === index ? (
-                    <img
-                      src={minimiseIcon}
-                      alt="minimize"
-                      className="w-6 h-6"
-                    />
+                    <Minimize/>
                   ) : (
-                    <img
-                      src={maximiseIcon}
-                      alt="maximise"
-                      className="w-6 h-6"
-                    />
+                    <Maximize/>
                   )}
                 </span>
               </button>
